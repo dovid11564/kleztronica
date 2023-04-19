@@ -71,3 +71,12 @@ nav {
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+
+/* background image  */
+.background-image {
+  background-image: url("C:\Users\dovid\Downloads\Facebook Ad Wide Photo Collage 1(2).png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

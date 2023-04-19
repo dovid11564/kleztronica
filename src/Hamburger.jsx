@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import InnerMenu from "./InnerMenu";
 // import './navbar.css'
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
 
     // toggle burger menu change
     const updateMenu = () => {
-        if(!isMenuClicked) {
+        if (!isMenuClicked) {
             setBurgerClass("burger-bar clicked")
             setMenuClass("menu visible")
         }
@@ -21,8 +22,8 @@ const Navbar = () => {
         setIsMenuClicked(!isMenuClicked)
     }
 
-    return(
-        <div style={{width: '100%', height: '100vh'}}>
+    return (
+        <div style={{ width: '100%', height: '100vh' }}>
             <nav>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class} ></div>
@@ -33,6 +34,7 @@ const Navbar = () => {
 
             <div className={menu_class}>
                 {/* put a component here that contains all the shit we need for the menu */}
+                <InnerMenu />
             </div>
         </div>
     )

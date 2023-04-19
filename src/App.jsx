@@ -6,8 +6,11 @@ function App() {
   
   return (
     <>
-      <h1>Kleztronica</h1>
+    
+      <header>Kleztronica</header>
+      <main className="background-image">
       <Nav />
+      </main>
     </>
   )
 }
